@@ -1,0 +1,77 @@
+<h4> Ví dụ về Text Area</h4>
+<form>
+	<textarea name="massage" rows="10" cols="30">
+The cat was playing in the garden.
+	</textarea>
+	<br>
+	<input type="submit">
+</form>
+<br>
+<h4> Ví dụ về Submit button</h4>
+<form action="/action_page.php">
+	First name:<br>
+	<input type="text" name="firstname" value="Mickey">
+	<br>
+	Last name:<br>
+	<input type="text" name="lastname" value="Mouse">
+	<br><br>
+	<input type="submit" value="Submit">
+</form>
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+<br>
+<h4> Ví dụ về file upload</h4>
+<h4>Upload new files</h4>
+<form enctype="multipart/form-data" action="upload.php" method="post">
+	Upload this file: <input name="userfile" type="file"><br>
+	<input type="submit" value="Upload File">
+</form>
+<br>
+<h4> Ví dụ về Reset button</h4>
+<form action="/action_page.php">
+	First name:<br>
+	<input type="text" name="firstname" value="Mickey">
+	<br>
+	Last name:<br>
+	<input type="text" name="lastname" value="Mouse">
+	<br><br>
+	<input type="submit" value="Submit">
+	<input type="reset">
+</form>
+<br>
+<h4> Ví dụ về group</h4>
+<form action="/action_page.php">
+	<fieldset>
+		<legend>Personal information:</legend>
+		First name:<br>
+		<input type="text" name="firstname" value="Mickey">
+		<br>
+		Last name:<br>
+		<input type="text" name="lastname" value="Mouse">
+		<br><br>
+		<input type="submit" value="Submit">
+	</fieldset>
+</form>
+<br>
+<h4>Ví dụ về các thẻ form</h4>
+<form action="receive.php" method="post">
+	Name <input type="text" name="lastname" value="Nguyen Cong Huy" size="30" maxlength="50">
+	<br>
+	Password <input type="password">
+	<br>
+	Married <input type="checkbox" checked="checked">
+	<br>
+	Male <input type="radio" checked="checked">&nbsp;&nbsp;
+	Female <input type="radio">
+	<br>
+	<input type="hidden">
+	Professional
+	<select>
+		<option>Database
+			<option selected>Network
+				<option>Software Engineering
+				</select>
+				<br>
+				<textarea name="Comment" rows="5" cols="20"></textarea>
+				<br>
+				<input type="submit"> <input type="reset">
+			</form>
