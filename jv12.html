@@ -1,0 +1,67 @@
+<html>
+<head><title>Popup</title>
+	<h2>Alert("sometext")</h2>
+	<script type="text/javascript">
+		function disp_alert()
+		{
+			alert("Hello again! This is how we" + '\n' + "and line breaks to an alert box!")
+		}
+	</script>
+</head>
+<body background="https://msmobile.com.vn/upload_images/images/hinh-nen-powerpoint-mau-xanh-da-troi-8.jpg">
+	<form>
+		<input type="button"
+		onclick="disp_alert()" value="Display alert box">
+	</form>
+	<br><br>
+	<h2>Confirm("sometext")
+		<script type="text/javascript">
+			function disp_confirm()
+			{
+				var name=confirm("Press a button")
+				if(name==true)
+				{
+					document.write("You pressed the OK button!")
+				}
+				else
+				{
+					document.write("You pressed the Cancel button!")
+				}
+			}
+		</script>
+		<form>
+			<input type="button"
+			onclick="disp_confirm()" value="Display a confirm box">
+		</form>
+		<br><br>
+		<h2>Prompt("sometext","defaultvalue")</h2>
+		<script type="text/javascript">
+			function disp_prompt()
+			{
+				var name=prompt("Please enter your name","")
+				if(name!=null && name!="")
+				{
+					document.write("Hello " + name + "!How are you today?")
+				}
+			}
+		</script>
+		<form>
+			<input type="button"
+			onclick="disp_prompt()" value="Display a prompt box">
+		</form>
+		<br><br>
+		<h2>Kết hợp với form</h2>
+		<script type="text/javascript">
+		function myfunction(txt)
+		{
+			alert(txt)
+		}
+		</script>
+		<form>
+			<input type="button"
+			onclick="myfunction('Good Morning!')" value="In the Morning">
+			<input type="button"
+			onclick="myfunction('Good Evening!')" value="In the Evening">
+		</form>
+</body>
+</html>
