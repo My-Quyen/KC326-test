@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Giải phương trình bậc 2</title>
+<script type="text/javascript">
+function giai(form){
+var x1,x2;
+var x,y,z,delta;
+x= parseInt(form.a.value);
+y= parseInt(form.b.value);
+z= parseInt(form.c.value);
+delta=(y*y-4*x*z)
+if(delta ==0){
+ alert("Phương trình có nghiệm kép");
+ x1=-y/(2*x) ;
+ x2=-y/(2*x);
+ form.x.value=eval(x1);
+ form.y.value=eval(x2);
+}
+else if(delta<0){
+ alert("Phương trình vô nghiệm");
+} 
+else{
+ alert("Phương trình có hai nghiệm");
+ x1=(-y-Math.sqrt(delta))/(2*x);
+ x2=(-y+Math.sqrt(delta))/(2*x);
+ form.x.value=eval(x1);
+ form.y.value=eval(x2);
+}
+}
+</script>
+</head>
+<body background="https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-nen-nhe-nhang-don-gian.jpg">
+<form method="post">
+<center>
+<br><br>Nhập giá trị a:
+<input type="text" name="a" value="">
+<br><br> Nhập giá trị b:
+<input type="text" name="b" value="">
+<br><br>Nhập giá trị c:
+<input type="text" name="c" value="">
+<br><br>Đáp số:
+<input type="text" name="x" value="">
+<input type="text" name="y" value="">
+<input type="button" value="Giải" onClick="giai(this.form)">
+</center>
+</form>
+</body>
+</html>
